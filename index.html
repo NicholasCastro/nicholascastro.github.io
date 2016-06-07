@@ -16,19 +16,19 @@
   <link href='https://cdnjs.cloudflare.com/ajax/libs/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
 
 </head>
-<body>
+<body class="indigo lighten-3">
 
 <div class="navbar-fixed">
-    <nav>
+    <nav class="indigo darken-4">
     <div class="container">
       <div class="nav-wrapper">
         <a href="#!" class="brand-logo">Nick C</a>
-        <ul id="nav-mobile" class="tabs ">
+        <ul id="nav-mobile" class="tabs indigo darken-2">
         <li class="tab col s1 offset-s8"><a class="active" href="#home"> <i class="fa fa-home fa-2x" aria-hidden="true"></i> Home</a> </li>
-        <li class="tab col s1"><a href="#bio">Bio</a></li>
-        <li class="tab col s1"><a href="#projects">Projects</a></li>
-        <li class="tab col s1"><a href="#skills">Skills</a></li>
-        <li class="tab col s1"><a href="#sociallinks">Social Links</a></li>
+        <li class="tab col s1"><a href="#bio"><i class="fa fa-user fa-2x" aria-hidden="true"></i>Bio</a></li>
+        <li class="tab col s1"><a href="#projects"><i class="fa fa-folder fa-2x" aria-hidden="true"></i>Projects</a></li>
+        <li class="tab col s1"><a href="#skills"><i class="fa fa-briefcase fa-2x" aria-hidden="true"></i>Skills</a></li>
+        <li class="tab col s1"><a href="#sociallinks"><i class="fa fa-share-square fa-2x" aria-hidden="true"></i>Social Links</a></li>
       </ul>
         </ul>
       </div>
@@ -48,31 +48,31 @@
 		<div class="slider">
     <ul class="slides">
       <li>
-        <img src="http://lorempixel.com/580/250/nature/1"> <!-- random image -->
+        <img src="img/bio-img.png">
         <div class="caption center-align">
-          <h3>Bio</h3>
-          <h5 class="light grey-text text-lighten-3">More information about me.</h5>
+          <h3 class="black-text">Bio</h3>
+          <h5 class="black-text text-lighten-3">More information about me.</h5>
         </div>
       </li>
       <li>
-        <img src="http://lorempixel.com/580/250/nature/2"> <!-- random image -->
+        <img src="img/trivia.png">
         <div class="caption center-align">
-          <h3>Projects</h3>
-          <h5 class="light grey-text text-lighten-3">Examples of work I have done in the past.</h5>
+          <h3 class="purple-text">Projects</h3>
+          <h5 class="purple-text text-lighten-2">Examples of work I have done in the past.</h5>
         </div>
       </li>
       <li>
-        <img src="http://lorempixel.com/580/250/nature/3"> <!-- random image -->
+        <img src="img/angular.png">
         <div class="caption center-align">
-          <h3>Skills</h3>
-          <h5 class="light grey-text text-lighten-3">Languages and Framework I am capable of using.</h5>
+          <h3 class="blue-text">Skills</h3>
+          <h5 class="blue-text text-lighten-2">Languages and Framework I am capable of using.</h5>
         </div>
       </li>
       <li>
-        <img src="http://lorempixel.com/580/250/nature/4"> <!-- random image -->
+        <img src="img/git.png">
         <div class="caption center-align">
-          <h3>Social Links</h3>
-          <h5 class="light grey-text text-lighten-3">How to contact me.</h5>
+          <h3 class="red-text">Social Links</h3>
+          <h5 class="red-text text-lighten-2">How to contact me.</h5>
         </div>
       </li>
     </ul>
@@ -85,13 +85,18 @@
 <!-- Bio -->
 <div id="bio">
   <img class="header-img" src="img/bio.png">
-  <div class="section white">
+  <div class="section">
     <div class="row container">
-      <div class="col s2">
-       <img id="bio-img" src="img/bio-img.png">
-      </div>
-      <div class="col s6">
-       <h5>I am a student who recently began learning the basics of web design and animation. I am also very skilled in math and science. In my free time I enjoy writing and being on the computer.</h5>
+      <div class="col s6 offset-s3">
+        <div class="card blue-grey darken-1">
+            <div class="card-image right">
+              <img id="bio-img" src="img/bio-img.png">
+            </div>
+            <div class="card-content white-text">
+              <span class="card-title"><h4>Nick C</h4></span>
+              <h5>I am a New Jersey highschool student who recently began learning the basics of web design and animation. I am also very skilled in math and science. In my free time I enjoy writing and being on the computer.</h5>
+            </div>
+          </div>     
       </div>
     </div>
   </div>
@@ -120,7 +125,8 @@
               </ul>
             </div>
             <div class="card-action">
-              <a href="http://nicholascastro.github.io/firstwebsite/homepage.html">Link</a>
+              <a target="_blank" href="http://nicholascastro.github.io/firstwebsite/homepage.html">Link</a>
+              <a target="_blank" href="https://github.com/NicholasCastro/firstwebsite">Github Link</a>
             </div>
           </div> <!-- First Website End -->
 
@@ -142,7 +148,8 @@
               </ul>
             </div>
             <div class="card-action">
-              <a href="http://nicholascastro.github.io/lyrics-website/Immortals.html">Link</a>
+              <a target="_blank" href="http://nicholascastro.github.io/lyrics-website/Immortals.html">Link</a>
+              <a target="_blank" href="https://github.com/NicholasCastro/lyrics-website">Github Link</a>
             </div>
           </div> <!-- Lyrics Website End -->
 
@@ -152,7 +159,7 @@
     <div class="row"> <!-- Row 2 start -->
       <div class="col s6">
 
-        <div class="card"> <!-- Trivia Start -->
+        <div class="card"> <!-- Fan Page Start -->
             <div class="card-image">
               <img src="img/fanpage.png">
               <span class="card-title">Movie Fan Page</span>
@@ -169,14 +176,15 @@
               </ul>
             </div>
             <div class="card-action">
-              <a href="http://nicholascastro.github.io/fan-page/fan-page.html">Link</a>
+              <a target="_blank" href="http://nicholascastro.github.io/fan-page/fan-page.html">Link</a>
+              <a target="_blank" href="https://github.com/NicholasCastro/fan-page">Github Link</a>
             </div>
-          </div> <!-- Trivia End -->
+          </div> <!-- Fan Page End -->
 
         </div>
         <div class="col s6">
 
-          <div class="card"> <!-- First Website Start -->
+          <div class="card"> <!-- Trivia Start -->
             <div class="card-image">
               <img src="img/trivia.png">
               <span class="card-title">Trivia Game</span>
@@ -193,16 +201,247 @@
               </ul>
             </div>
             <div class="card-action">
-              <a href="http://nicholascastro.github.io/trivia-game/trivia.html">Link</a>
+              <a target="_blank" href="http://nicholascastro.github.io/trivia-game/trivia.html">Link</a>
+              <a target="_blank" href="https://github.com/NicholasCastro/trivia-game">Github Link</a>
             </div>
-          </div> <!-- First Website End -->
+          </div> <!-- Trivia End -->
 
         </div>
     </div> <!-- Row 2 end -->
 
+    <div class="row"> <!-- Row 3 start -->
+      <div class="col s6">
+
+        <div class="card"> <!-- Mad Libs Start -->
+            <div class="card-image">
+              <img src="img/madlibs.png">
+              <span class="card-title black-text">Mad Libs</span>
+            </div>
+            <div class="card-content">
+              <p>An interactive webpage based on Mad Libs. The user inputs various words which are then inserted into a story. Made to demonstrate AngularJS and uses js to transition from the input card to the story card.</p>
+              <ul>
+              <p>Demonstrates usage of:</p>
+                <li>- <b>html</b></li>
+                <li>- <b>css</b></li>
+                <li>- <b>js</b></li>
+                <li>- <b>Materialize</b></li>
+                <li>- <b>animate.css</b></li>
+                <li>- <b>AngularJS</b></li>
+              </ul>
+            </div>
+            <div class="card-action">
+              <a target="_blank" href="http://nicholascastro.github.io/mad-libs/mad-libs.html">Link</a>
+              <a target="_blank" href="https://github.com/NicholasCastro/mad-libs">Github Link</a>
+            </div>
+          </div> <!-- Mad Libs End -->
+
+        </div>
+        <div class="col s6">
+
+          <div class="card"> <!-- To Do Start -->
+            <div class="card-image">
+              <img src="img/todo.png">
+              <span class="card-title black-text">ToDo List</span>
+            </div>
+            <div class="card-content">
+              <p>An app that allows the user to create a todo list. Features include the ability to add and remove items and change the title, as well as a counter that displays how many items are remaining. Made using AngularJS.</p>
+              <ul>
+              <p>Demonstrates usage of:</p>
+                <li>- <b>html</b></li>
+                <li>- <b>css</b></li>
+                <li>- <b>Materialize</b></li>
+                <li>- <b>AngularJS</b></li>
+              </ul>
+            </div>
+            <div class="card-action">
+              <a target="_blank" href="http://nicholascastro.github.io/todo-list/todo-list.html">Link</a>
+              <a target="_blank" href="https://github.com/NicholasCastro/todo-list">Github Link</a>
+            </div>
+          </div> <!-- Trivia End -->
+
+        </div>
+    </div> <!-- Row 3 end -->
+
   </div> <!-- Container end -->
 </div>
 <!-- Projects end -->
+
+
+<!-- Skills -->
+<div id="skills">
+  <img class="header-img" src="img/skills.png">
+
+  <div class="container">
+
+    <div class="row"> <!-- Row 1 Start -->
+
+        <div class="col s4"> <!-- GitHub Start -->
+          <div class="card center-align blue-grey darken-1">
+            <div class="row">
+              <div class="col s3 offset-s3">
+                <div class="card-content white-text">
+                  <span class="devicons devicons-github_badge fa-5x"></span>
+                  <h5>GitHub</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- GitHub End -->
+
+        <div class="col s4"> <!-- html Start -->
+          <div class="card blue-grey darken-1">
+            <div class="row">
+              <div class="col s3 offset-s3">
+                <div class="card-content white-text">
+                  <span class="devicons devicons-html5 fa-5x"></span>
+                  <h5>HTML5</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- html End -->
+
+        <div class="col s4"> <!-- css Start -->
+          <div class="card blue-grey darken-1">
+            <div class="row">
+              <div class="col s5 offset-s3">
+                <div class="card-content white-text">
+                  <span class="devicons devicons-css3 fa-5x"></span>
+                  <h5>CSS 3</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- css End -->
+
+    </div><!-- Row 1 End -->
+
+    <div class="row"> <!-- Row 2 Start -->
+
+        <div class="col s4"> <!-- js Start -->
+          <div class="card center-align blue-grey darken-1">
+            <div class="row">
+                <div class="card-content white-text">
+                  <div class="row">
+                    <div class="col s3 offset-s4">
+                      <span class="devicons devicons-javascript_badge fa-5x"></span>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col s3 offset-s3">
+                      <h5>JavaScript</h5>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div> <!-- js End -->
+
+        <div class="col s4"> <!-- jquery Start -->
+          <div class="card center-align blue-grey darken-1">
+            <div class="row">
+                <div class="card-content white-text">
+                  <div class="row">
+                    <div class="col s3 offset-s4">
+                      <span class="devicons devicons-jquery fa-5x"></span>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col s3 offset-s4">
+                      <h5>jquery</h5>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div> <!-- jquery End -->
+
+        <div class="col s4"> <!-- git Start -->
+          <div class="card center-align blue-grey darken-1">
+            <div class="row">
+                <div class="card-content white-text">
+                  <div class="row">
+                    <div class="col s3 offset-s4">
+                      <span class="devicons devicons-git fa-5x"></span>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col s3 offset-s4">
+                      <h5>Git</h5>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div> <!-- git End -->
+
+    </div><!-- Row 2 End -->
+
+    <div class="row"> <!-- Row 3 Start -->
+
+        <div class="col s4 offset-s2"> <!-- angular Start -->
+          <div class="card center-align blue-grey darken-1">
+            <div class="row">
+                <div class="card-content white-text">
+                  <div class="row">
+                    <div class="col s3 offset-s4">
+                      <span class="devicons devicons-angular fa-5x"></span>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col s3 offset-s3">
+                      <h5>AngularJS</h5>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div> <!-- angular End -->
+
+        <div class="col s4"> <!-- materialize Start -->
+          <div class="card center-align blue-grey darken-1">
+            <div class="row">
+                <div class="card-content white-text">
+                  <div class="row">
+                    <div class="col s3 offset-s4">
+                      <span class="devicons devicons-materializecss fa-5x"></span>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col s3 offset-s2">
+                      <h5>MaterializeCSS</h5>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div> <!-- materialize End -->
+
+    </div><!-- Row 3 End -->
+
+  </div>
+</div>
+<!-- Skills End -->
+
+<!-- Social Links -->
+<div id="sociallinks">
+  <img class="header-img" src="img/social.png">
+  <div class="row container">
+    <div class="col s6 offset-s3">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">GitHub</span>
+              <p>Where I keep all my files.</p>
+            </div>
+            <div class="card-action">
+              <a href="https://github.com/NicholasCastro">Link</a>
+
+            </div>
+          </div>
+    </div>
+  </div>
+</div>
+<!-- Social Links #nd -->
 
 <!-- Jquery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
